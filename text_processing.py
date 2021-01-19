@@ -62,4 +62,6 @@ def no_vowels(input_string:str):
     """
     p = re.compile("[aeiou]")
     no_vowel_string = p.sub("", input_string)
+    if not no_vowel_string:
+        return ""
     return no_vowel_string
