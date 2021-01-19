@@ -60,8 +60,7 @@ def no_vowels(input_string:str):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    p = re.compile("[aeiou]")
+    p = re.compile("[aeiouAEIOU]")
     no_vowel_string = p.sub("", input_string)
-    if not no_vowel_string:
-        return ""
+    
     return no_vowel_string
